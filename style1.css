@@ -1,0 +1,318 @@
+
+* {
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: black;
+}
+
+.main {
+    background-image: url("background.jpg");
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: max(1200px, 100vw);
+    position: relative;
+}
+
+.main .box {
+    height: 100vh;
+    width: 100%;
+    opacity: 0.68;
+    background-color: black;
+    position: absolute;
+    top: 0;
+}
+
+nav {
+    max-width: 60vw;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 62px;
+}
+
+nav img {
+    color: red;
+    width: 144px;
+    position: relative;
+    z-index: 5;
+    
+    margin-right: 5%;
+}
+
+nav button {
+    position: relative;
+    z-index: 10;
+}
+
+.hero {
+    font-family: "Martel Sans", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+    height: calc(100% - 62px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    color: white;
+    flex-direction: column;
+    gap: 24px;
+    padding: 0 ;
+}
+.hero> :first-child{
+    font-weight: bolder;
+    font-size: 48px;
+    text-align: center;
+}
+.hero> :nth-child(2){
+    font-weight: 700;
+    font-size: 24px;
+    text-align: center;
+}
+.hero> :nth-child(3){
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+}
+.seperation{
+    height: 8px;
+    background-color:gray
+}
+.btn{
+    padding: 6px;
+    font-weight:500;
+    color: white;
+    background-color: rgba(23,23,23,0.2);
+    cursor: pointer;
+    margin: 6px;
+    border-radius: 6px;
+    
+}
+.btn-red{
+background-color: red;
+color: white;
+padding: 11px 24px;
+font-size: 16px;
+border-radius: 3px;
+font-weight: 500;
+border: none;
+}
+.main input{
+    padding: 9px 24px;
+    width: 350px;
+font-size: 18px;
+color: white;
+border-radius: 4px;
+background-color: rgba(23,23,23,0.2);
+border: 1px solid rgba(246,238,238,0.5);
+}
+.btn-red-sm{
+    background-color: red;
+    color: white;
+    border: none;
+
+}
+.head{
+    height: 80px;
+    width: 1400px;
+    display: flex;
+    align-items: start;
+    font-size: 30px;
+    font-weight: bold;
+}
+.peak{
+    width: 40px;
+    justify-content: space-between;
+
+}
+.abes h1{
+    justify-content: flex-start;
+}
+.abes::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+
+  }
+    .abes{
+
+        height: 400px;
+        width: 100%;
+        padding-top: 70px;
+        display: flex;
+        color: white;
+        
+        align-items: center;
+        object-fit:cove ;
+        flex-direction: row;
+        overflow-x: auto;
+        
+    
+        
+    }
+
+    .item:hover{
+        background-color: rgb(70, 16, 16);
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+            transform: scale(1.1);  
+    }
+    
+    .item{
+        height: 300px;
+        width: 300px;
+        display: inline-block;
+        justify-content: center;
+        margin: 17px;
+        position: relative;
+        padding: 20px;
+        background-color: gray;
+        cursor: pointer;
+        overflow-x:;
+        z-index: 10;
+        border-radius: 8px;
+    
+        
+    }
+    .btn-1{
+
+        height: 10px;
+        width: 7px;
+        display: flex;
+        background-color: rgba(23,23,23,0.2);
+        margin: 3px;
+    }
+    .btn-2{
+        width: 10px;
+        background-color: rgba(23,23,23,0.2);
+        margin: 3px;
+
+    }
+.r h3{
+    background-color: black;
+    color: white;
+    padding-top: 10px;
+    font-size: 32px;
+}
+    .r{
+        height: 300px;
+        width: 1200px;
+        padding-top: 20px;
+        padding-left: 150px;
+        opacity: 0.9 ;
+        
+        
+    
+        display: flex;
+        
+    
+        
+        
+    }
+    .e{
+        height: 250px;
+        width: 400px;
+        color: white;
+        background-color: rgb(117, 90, 116);
+        position: relative;
+
+        
+        margin: 15px;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        border-radius: 15px;
+
+
+    }
+    .faq h2{
+        text-align: center;
+        font-size: 48px;
+    }
+    .faq{
+        background-color: black;
+        color: white;
+        padding: 2px;
+    }
+    .faqbox:hover{
+        background-color: rgb(50, 47, 47);
+    }
+    .faqbox{
+        display: flex;
+        background-color: gray;
+        padding: 18px;
+        justify-content: space-between;
+        font-size: 24px;
+        margin: 10px auto;
+        max-width: 60vw;
+        cursor: pointer;
+        text-decoration: underline;
+    }
+/* 
+.seperation on{
+    margin-left: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
+.on{
+    align-items: center;
+    margin-left: 400px;
+}
+    footer{
+        color: white;
+        max-width: 60vw;
+        margin: auto; 
+        padding: 14px;
+    }
+    footer .w{
+        padding: 34px 0;
+    }
+
+    .footer{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        color: white;
+        
+    
+    }
+.footer-item{
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
+    text-decoration: underline;
+
+}
+.footer a{
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+}
+  
+.footer {
+    background-color: #000;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+    color: #888;
+}
+
+.footer p {
+    font-size: 0.9rem;
+} 
+  
+@media (max-width: 768px) {
+    .hero input {
+        width: 200px;
+    }
+
+    .abes img {
+        width: 150px;
+        height: 200px;
+    }
+}
+
+
+
+
